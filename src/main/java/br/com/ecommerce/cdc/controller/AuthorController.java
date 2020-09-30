@@ -14,7 +14,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 @RestController
-@RequestMapping("/autor")
+@RequestMapping("/v1/autor")
 public class AuthorController {
 
     /*

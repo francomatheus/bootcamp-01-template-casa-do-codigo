@@ -11,6 +11,8 @@ import org.springframework.web.server.ResponseStatusException;
 
 import javax.transaction.Transactional;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -99,7 +101,7 @@ public class AuthorServiceImpl implements AuthorService {
         author.setName(authorFormValidate.getName());
         author.setEmail(authorFormValidate.getEmail());
         author.setDescription(authorFormValidate.getDescription());
-        author.setInstant(LocalDateTime.now());
+        author.setInstant(LocalDateTime.now(ZoneId.of("UTC")));
         return author;
     }
 
