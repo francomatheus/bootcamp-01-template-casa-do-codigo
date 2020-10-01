@@ -1,10 +1,15 @@
-package br.com.ecommerce.cdc.domain;
+package br.com.ecommerce.cdc.domain.model;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
-public class AuthorResponse {
+@Entity
+@Table(name = "author")
+public class Author {
 
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
     private String email;
     private String description;

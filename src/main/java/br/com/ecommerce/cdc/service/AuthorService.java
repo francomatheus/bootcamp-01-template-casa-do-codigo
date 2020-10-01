@@ -1,7 +1,7 @@
 package br.com.ecommerce.cdc.service;
 
-import br.com.ecommerce.cdc.domain.AuthorForm;
-import br.com.ecommerce.cdc.domain.AuthorResponse;
+import br.com.ecommerce.cdc.domain.form.AuthorForm;
+import br.com.ecommerce.cdc.domain.response.AuthorResponse;
 
 /**
  * Complexidade máxima permitida da classe - 7

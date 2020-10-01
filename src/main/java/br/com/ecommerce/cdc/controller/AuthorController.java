@@ -1,7 +1,7 @@
 package br.com.ecommerce.cdc.controller;
 
-import br.com.ecommerce.cdc.domain.AuthorForm;
-import br.com.ecommerce.cdc.domain.AuthorResponse;
+import br.com.ecommerce.cdc.domain.form.AuthorForm;
+import br.com.ecommerce.cdc.domain.response.AuthorResponse;
 import br.com.ecommerce.cdc.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

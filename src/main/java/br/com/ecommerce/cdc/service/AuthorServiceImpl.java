@@ -1,8 +1,8 @@
 package br.com.ecommerce.cdc.service;
 
-import br.com.ecommerce.cdc.domain.Author;
-import br.com.ecommerce.cdc.domain.AuthorForm;
-import br.com.ecommerce.cdc.domain.AuthorResponse;
+import br.com.ecommerce.cdc.domain.model.Author;
+import br.com.ecommerce.cdc.domain.form.AuthorForm;
+import br.com.ecommerce.cdc.domain.response.AuthorResponse;
 import br.com.ecommerce.cdc.repository.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,7 +12,6 @@ import org.springframework.web.server.ResponseStatusException;
 import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.time.ZoneOffset;
 import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
